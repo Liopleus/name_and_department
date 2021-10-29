@@ -72,7 +72,7 @@ fn add_employee(
     loop {
         name.clear();
         io::stdin().read_line(&mut name).expect("Invalid input!");
-        if name.trim().chars().count() > 0 {
+        if name.trim().len() > 0 {
             break;
         } else {
             println!("Please enter a valid name!");
@@ -103,7 +103,7 @@ fn create_dept(
             .read_line(&mut department)
             .expect("Invalid input!");
 
-        if department.trim().chars().count() > 0 {
+        if department.trim().len() > 0 {
             break;
         } else {
             println!("Please enter a valid department name!");
